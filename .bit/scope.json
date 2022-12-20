@@ -1,0 +1,10 @@
+{
+    "name": "git-dirty",
+    "remotes": {},
+    "version": "1.0.377",
+    "lanes": {
+        "current": "main",
+        "tracking": [],
+        "new": []
+    }
+}
