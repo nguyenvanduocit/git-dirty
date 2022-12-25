@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid p-3">
-    <div class="row row-cols-2">
+    <div class="row">
       <div class="col-5">
         <ProjectList/>
       </div>

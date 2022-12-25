@@ -1,7 +1,8 @@
 <template>
   <div class="card">
     <div class="card-body">
-      {{folder}}
+      <span v-if="folder">Dirty</span>
+      <span v-else>Clean</span>
     </div>
   </div>
 </template>
