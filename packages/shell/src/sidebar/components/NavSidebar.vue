@@ -1,5 +1,10 @@
 <template>
   <nav data-tauri-drag-region :class="$style.sidebar" class="pt-2 pb-2 d-flex flex-column">
+    <div class="text-center mb-3 mt-2">
+      <RouterLink class="navbar-brand" to="/">
+        <img src="/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+      </RouterLink>
+    </div>
     <NavSidebarMenu :menus="menus"/>
     <div class="mt-auto" data-tauri-drag-region></div>
     <NavSidebarMenu :menus="bottomMenus"/>

@@ -16,7 +16,13 @@ tauri-build = { version = "1.2", features = [] }
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2", features = ["shell-open", "window-start-dragging"] }
+tauri = { version = "1.2", features = ["api-all", "macos-private-api"] }
+tokio = "1.23.0"
+lazy_static = "1.4"
+bincode = "1.3"
+parselnk = "0.1"
+tauri-plugin-store = { git = "https://github.com/tauri-apps/tauri-plugin-store",  branch = "dev"}
+git2 = "0.15"
 
 [features]
 # by default Tauri runs in production mode

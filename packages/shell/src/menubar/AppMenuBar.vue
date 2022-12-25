@@ -14,7 +14,7 @@ import AppMenuBarDefault from "./AppMenuBarDefault.vue";
 
 <style lang="stylus" module>
 .menubar
-  min-height 45px
+  min-height 50px
   --bs-navbar-padding-y 5px
-  padding 0 10px 0 80px !important
+  padding 0 10px 0 20px !important
 </style>

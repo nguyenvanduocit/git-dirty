@@ -7,20 +7,11 @@ export declare type SidebarMenuStore = {
   bottomMenus: SidebarMenuItem[]
 }
 
-export const menus = ref<SidebarMenuItem[]>([
-  {
-    id: 'definition',
-    name: 'Definition',
-    icon: 'fe fe-globe',
-    routePath: '/definition',
-  },
-  {
-    id: 'wiki',
-    name: 'Wiki',
-    icon: 'fe fe-book-open',
-    routePath: '/about',
-  },
-])
+export const menus = ref<SidebarMenuItem[]>()
+
+export const setMenus = (newMenus: SidebarMenuItem[]) => {
+    menus.value = newMenus
+}
 
 export const bottomMenus = ref<SidebarMenuItem[]>([
   {

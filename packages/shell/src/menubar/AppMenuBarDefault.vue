@@ -1,5 +1,5 @@
 <template>
-  <h3 class="header-title text-center" v-text="title"></h3>
+  <h3 class="header-title" v-text="title"></h3>
 </template>
 
 <script lang="ts" setup>
@@ -9,7 +9,6 @@ import {computed} from "vue";
 const route = useRoute()
 
 const title = computed(() => {
-  // return meta title or capitalize the first letter of the route name
   return route.meta['title'] || capitalize(route.path.split('/').pop())
 })
 

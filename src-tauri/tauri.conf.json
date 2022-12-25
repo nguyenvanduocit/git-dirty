@@ -1,9 +1,9 @@
 {
   "build": {
-    "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build",
+    "beforeDevCommand": "pnpm --filter '@aiocean/app' dev",
+    "beforeBuildCommand": "pnpm --filter '@aiocean/app' build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist",
+    "distDir": "../packages/app/dist",
     "withGlobalTauri": false
   },
   "package": {
@@ -11,13 +11,28 @@
     "version": "0.0.0"
   },
   "tauri": {
+    "macOSPrivateApi": true,
     "allowlist": {
+      "all": true,
+      "fs": {
+        "all": true,
+        "copyFile": true,
+        "createDir": true,
+        "readDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "writeFile": true
+      },
       "window": {
         "startDragging": true
       },
-      "all": false,
       "shell": {
         "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": true,
         "open": true
       }
     },
@@ -60,14 +75,15 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "git-dirty",
+        "title": "Git Dirty",
         "width": 800,
-        "titleBarStyle": "Overlay"
+        "skipTaskbar": false
       }
     ]
   }
