@@ -1,5 +1,9 @@
 <template>
-{{folder}}
+  <div class="card">
+    <div class="card-body">
+      {{folder}}
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">

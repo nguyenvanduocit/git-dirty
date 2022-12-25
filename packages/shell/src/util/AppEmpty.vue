@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-xl-8">
 
-        <img src="/img/illustrations/not-found.svg" alt="..." class="img-fluid mt-n5 mb-4" style="max-width: 272px;">
+        <img src="/img/illustrations/lost.svg" alt="..." class="img-fluid mb-4" style="max-width: 272px;">
         <h2>
           No thing found
         </h2>

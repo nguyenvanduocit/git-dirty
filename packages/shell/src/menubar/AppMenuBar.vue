@@ -16,5 +16,5 @@ import AppMenuBarDefault from "./AppMenuBarDefault.vue";
 .menubar
   min-height 50px
   --bs-navbar-padding-y 5px
-  padding 0 10px 0 20px !important
+  padding 0 10px 0 15px !important
 </style>
