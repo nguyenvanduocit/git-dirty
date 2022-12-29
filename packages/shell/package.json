@@ -7,10 +7,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+
     "vue": "^3.2.45",
     "vue-router": "4"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^1.2.2",
     "vite": "^4.0.0",
     "@vitejs/plugin-vue": "^4.0.0"
   }

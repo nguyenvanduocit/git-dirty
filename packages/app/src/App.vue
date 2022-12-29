@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import {NavSidebar, AppMenuBar} from '@aiocean/shell'
+import {NavSidebar, AppMenuBar, useUnListen} from '@aiocean/shell'
 import {setMenus} from "@aiocean/shell/src/sidebar/store";
+import {onMounted, onUnmounted} from "vue";
+import {emit, listen} from "@tauri-apps/api/event";
 setMenus([
   {
     id: 'definition',
@@ -9,6 +11,10 @@ setMenus([
     routePath: '/projects',
   }
 ])
+
+onMounted(async () => {
+  await emit("main::loaded")
+})
 </script>
 
 <template>

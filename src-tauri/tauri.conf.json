@@ -83,7 +83,17 @@
         "resizable": true,
         "title": "Git Dirty",
         "width": 800,
-        "skipTaskbar": false
+        "skipTaskbar": false,
+        "visible": false,
+        "label": "main"
+      },
+      {
+        "width": 400,
+        "height": 200,
+        "decorations": false,
+        "center": true,
+        "url": "splash.html",
+        "label": "splashscreen"
       }
     ]
   }
